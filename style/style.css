@@ -675,3 +675,168 @@ footer .footer-links a:hover::after {
     border-top: 1px solid rgb(43 44 50 / 29%);
     color: rgba(255, 255, 255, 0.6);
 }
+
+
+
+/* filename: style.css
+authors: 
+    1. Duc Trung Nguyen
+    2. Truong Gia Phu
+    3. 
+created: 17 Feb 2025
+last modified: Feb 2025
+description: styling for apply.html */
+
+
+/* FORM CONTAINER */
+body {
+    font-family: "Montserrat", serif;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+.form-container {
+    background: white;
+    width: 50%;
+    max-width: 600px;
+    margin: 40px auto; /* Căn giữa theo chiều ngang */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Inputs, Select, Textarea */
+input, select, textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Name Fields */
+.name-fields {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.name-fields input {
+    width: calc(50% - 16px);
+}
+
+/*Gender Options*/
+.gender-options {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+/*  Date of Birth and Gender */
+.form-group-row {
+    display: flex;
+    justify-content: space-between; 
+    width: calc(100% - 14px);
+    gap: 12px; 
+}
+
+.half-width {
+    width: 50%;
+}
+
+.half-width input,
+.half-width select {
+    width: 100%;
+}
+
+/* SKILL LIST TABLE */
+.skill-table {
+    width: 97%;
+    border-collapse: collapse;
+}
+
+.skill-table td {  /* FORMED EACH ROW */
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.skill-table td:last-child {  /* MIDDLE CHECKBOX */
+    text-align: center;
+}
+
+
+/* INTERVIEW TIME SELECTION */
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.time-radio {
+    display: none;
+}
+
+.time-button {
+    background: white;
+    color: #0056b3;
+    border: 2px solid #0056b3;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.time-button:hover {
+    background: #0056b3;
+    color: white;
+}
+
+.time-radio:checked + .time-button {
+    background: #0056b3;
+    color: white;
+}
+
+/* APPLY BUTTON */
+.apply-button {
+    background: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.apply-button:hover {
+    background: #003f7f;
+}
