@@ -5,3 +5,5 @@ Members:
 
 Duc Trung Nguyen - 105508266
 Truong Gia Phu - 104991234
+Nguyen Xuan Duy Thai - 104979258
+
