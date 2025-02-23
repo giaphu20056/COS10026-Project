@@ -1056,3 +1056,110 @@ description: styling for about.html */
     background-color: #0b3d91;
     color: white;
 }
+
+/* filename: style.css
+authors: 
+    1. Duc Trung Nguyen
+    2. Truong Gia Phu
+    3. Nguyen Xuan Duy Thai
+created: 22 Feb 2025
+last modified: 23 Feb 2025
+description: styling for job.html */
+.background-animation {
+    background: linear-gradient(-45deg, #222, #666, #bbb, #fff);    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
+}
+button {
+    background: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.job-description h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 38px;
+    animation: textColorAnimation 6s ease infinite alternate;
+
+}
+
+.job-description section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+    list-style: none;
+    font-size: 30px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+summary:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(197, 185, 185, 0.9);
+}
+
+.job-description section h2 {
+    margin-top: 15px;
+}
+
+.job-description section p {
+    line-height: 1.6;
+}
+
+.job-description section ul, .job-description section ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.job-description section ul li, .job-description section ol li {
+    margin-bottom: 5px;
+}
+
+/* Aside */
+.job-description aside {
+    background: #22335b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Keyframes for smooth background transition */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes textColorAnimation {
+    0% { color: rgb(12, 161, 32); }  /* When background is dark */
+    50% { color: black; }  /* When background is medium gray */
+    100% { color: #333; }  /* When background is light */
+}
+
