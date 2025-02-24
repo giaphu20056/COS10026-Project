@@ -831,18 +831,16 @@ label {
     border: 1px solid #ccc;
 }
 
-.skill-table td:last-child {  /* MIDDLE CHECKBOX */
+/* Fix the checkbox */
+.skill-table td:last-child {
     text-align: center;
 }
 
-/* FIX SIZING OF CHECKBOX BUTTONS TO AVOID DISSAPEARING */
 .skill-table input[type="checkbox"] {
-    width: auto;
-    height: auto;
-    min-width: 16px; /* Standard checkbox size */
-    min-height: 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
 }
-
 
 /* INTERVIEW TIME SELECTION */
 .time-slots {
@@ -901,7 +899,16 @@ label {
 }
 
 
-/* About Section */
+/* About Section - styling for about.html */
+/* fixing center header */
+.about-section h1, 
+.about-container h2, 
+.team-section h2, 
+.timetable-section h2 {
+    text-align: center;
+    width: 100%;
+}
+
 .about-section {
   padding: 60px 20px;
   background-color: #0b3d91;
