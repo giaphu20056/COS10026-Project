@@ -832,10 +832,16 @@ label {
     border: 1px solid #ccc;
 }
 
-.skill-table td:last-child {  /* MIDDLE CHECKBOX */
+/* Fix the checkbox */
+.skill-table td:last-child {
     text-align: center;
 }
 
+.skill-table input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
 
 /* INTERVIEW TIME SELECTION */
 .time-slots {
@@ -894,7 +900,16 @@ label {
 }
 
 
-/* About Section */
+/* About Section - styling for about.html */
+/* fixing center header */
+.about-section h1, 
+.about-container h2, 
+.team-section h2, 
+.timetable-section h2 {
+    text-align: center;
+    width: 100%;
+}
+
 .about-section {
   padding: 60px 20px;
   background-color: #0b3d91;
@@ -1175,6 +1190,8 @@ summary:hover {
     font-size: 19px;
     padding: 15px;
     padding-bottom: 2px;
+    margin: 0;
+    border: 2px solid rgb(71, 51, 202); /* Adds a visible border */
 }
 
 /* Footer */
