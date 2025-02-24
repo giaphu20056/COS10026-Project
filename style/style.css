@@ -27,6 +27,10 @@ a {
     color: black;
 }
 
+ul, ol {
+    list-style: none;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -97,7 +101,6 @@ a {
     align-items: center;
     gap: 30px;
     margin-right: 50px;
-    list-style: none;
 }
 
 .navbar .menu a::after {
@@ -1224,6 +1227,11 @@ summary:hover {
 }
 
 /* Handling responsiveness */
+@media screen and (max-width: 1440px) {
+
+}
+
+
 @media screen and (max-width: 768px) {
 
 }
