@@ -164,14 +164,18 @@ ul, ol {
     /* align-items: center; */
     justify-content: center;
     padding-left: 10vw;
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .banner-text p:nth-of-type(1) {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color:rgb(255, 255, 255, 0.6);
     margin-bottom: 10px;
+}
+
+.banner-text p:nth-of-type(2) {
+    font-size: 1.2rem;
 }
 
 .banner-text p:nth-of-type(2) span {
@@ -586,7 +590,7 @@ footer {
 }
 
 .footer-content {
-    padding: 60px 0 120px;
+    padding: 60px 0;
     display: flex;
     align-items: flex-start;
     /* justify-content: space-between; */
