@@ -136,6 +136,14 @@ ul, ol {
     color: #0b3d91;
 }
 
+.navbar button a {
+    color: #ffff;
+}
+
+.navbar button:hover a {
+    color: #0b3d91;
+}
+
 /* Banner styles */
 .banner {
     width: 100%;
