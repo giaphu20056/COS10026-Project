@@ -193,41 +193,41 @@
                 <label>Skill List <span>*</span></label>
                 <table class="skill-table">
                     <tr>
-                        <td>Front-end Programming</td>
-                        <td><input type="checkbox" name="skills" value="Front-end Programming"></td>
+                        <td><label for="skill-frontend">Front-end Programming</label></td>
+                        <td><input type="checkbox" id="skill-frontend" name="skills" value="Front-end Programming"></td>
                     </tr>
                     <tr>
-                        <td>Back-end Programming</td>
-                        <td><input type="checkbox" name="skills" value="Back-end Programming"></td>
+                        <td><label for="skill-backend">Back-end Programming</label></td>
+                        <td><input type="checkbox" id="skill-backend" name="skills" value="Back-end Programming"></td>
                     </tr>
                     <tr>
-                        <td>Machine Learning/ Deep Learning</td>
-                        <td><input type="checkbox" name="skills" value="Machine Learning/ Deep Learning"></td>
+                        <td><label for="skill-ml">Machine Learning/ Deep Learning</label></td>
+                        <td><input type="checkbox" id="skill-ml" name="skills" value="Machine Learning/ Deep Learning"></td>
                     </tr>
                     <tr>
-                        <td>Data Analysis</td>
-                        <td><input type="checkbox" name="skills" value="Data Analysis"></td>
+                        <td><label for="skill-data">Data Analysis</label></td>
+                        <td><input type="checkbox" id="skill-data" name="skills" value="Data Analysis"></td>
                     </tr>
                     <tr>
-                        <td>UX/UI Design</td>
-                        <td><input type="checkbox" name="skills" value="UX/UI Design"></td>
+                        <td><label for="skill-ux">UX/UI Design</label></td>
+                        <td><input type="checkbox" id="skill-ux" name="skills" value="UX/UI Design"></td>
                     </tr>
                     <tr>
-                        <td>Continuous integration and continuous delivery (CI/CD)</td>
-                        <td><input type="checkbox" name="skills" value="CI/CD"></td>
+                        <td><label for="skill-ci">Continuous integration and continuous delivery (CI/CD)</label></td>
+                        <td><input type="checkbox" id="skill-ci" name="skills" value="CI/CD"></td>
                     </tr>
                     <tr>
-                        <td>Cybersecurity</td>
-                        <td><input type="checkbox" name="skills" value="Cybersecurity"></td>
+                        <td><label for="skill-cyber">Cybersecurity</label></td>
+                        <td><input type="checkbox" id="skill-cyber" name="skills" value="Cybersecurity"></td>
                     </tr>
                     <tr>
-                        <td>Cloud Computing</td>
-                        <td><input type="checkbox" name="skills" value="Cloud Computing"></td>
+                        <td><label for="skill-cloud">Cloud Computing</label></td>
+                        <td><input type="checkbox" id="skill-cloud" name="skills" value="Cloud Computing"></td>
                     </tr>
                     <tr>
-                        <td>Hardware and Software Troubleshooting</td>
-                        <td><input type="checkbox" name="skills" value="Hardware and Software Troubleshooting"></td>
-                    </tr>                    
+                        <td><label for="skill-troubleshooting">Hardware and Software Troubleshooting</label></td>
+                        <td><input type="checkbox" id="skill-troubleshooting" name="skills" value="Hardware and Software Troubleshooting"></td>
+                    </tr>
                 </table>
             </div>
 
@@ -240,7 +240,7 @@
             <!-- Resume Upload -->
             <div class="form-group">
                 <label for="resume">Upload Resume <span>*</span></label>
-                <input type="file" id="resume" name="resume" required>
+                <input type="file" id="resume" name="resume" required aria-label="Upload Resume">
             </div>
 
             <!-- Additional Documents -->
