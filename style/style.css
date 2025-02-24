@@ -15,6 +15,10 @@ html {
     cursor: default;
 }
 
+p {
+    line-height: 2rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -219,7 +223,7 @@ ul, ol {
 .intro-card-field {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .intro-card {
@@ -393,12 +397,13 @@ ul, ol {
 }
 
 .product-details {
-    color: white;
     position: absolute;
     left: 0;
     top: 40%;
     z-index: 11;
     padding: 0 30px;
+    color: white;
+    font-size: 1.2rem;
     transform: translateY(200px);
     transition: all 0.2s ease;
 }
@@ -591,7 +596,7 @@ footer {
     max-width: 100px;
 }
 
-.footer-content div:first-child {
+.footer-content .social-links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1228,10 +1233,272 @@ summary:hover {
 
 /* Handling responsiveness */
 @media screen and (max-width: 1440px) {
-
+    .company-logo {
+        width: 80px;
+    }
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+    
+    .header-content .logo {
+        width: 30%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .header-content .logo h1 {
+        font-size: 1.4rem;
+    }
 
+    .navbar {
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    .navbar .menu {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+    }
+
+    .navbar .menu a {
+        display: inline-block;
+        font-size: 1rem;
+    }
+
+    .banner-text {
+        max-width: 80%;
+    }
+
+    .intro-card-field {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .intro-card {
+        width: 100%;
+    }
+
+    .product-field {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .product-card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .testimony .profile {
+        flex-direction: column;
+    }
+
+    .testimony .profile-photo {
+        margin-right: 0;
+        margin-bottom: 80px;
+    }
+
+    .testimony .testimony-text {
+        max-width: 80%;
+    }
+
+    .contact .section-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact .cta-text {
+        margin-bottom: 60px;
+    }
+
+    .contact .cta-text + div {
+        width: 100%;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 60px;
+    }
+
+    .footer-content .social-links {
+        grid-column: 1;
+        grid-row: 1;
+        width: 50%;
+    }
+
+    .footer-content .footer-links {
+        grid-column: 2;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content .footer-links h3 {
+        grid-column: 1 / -1;
+    }
+
+
+    .footer-content .newsletter {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content .newsletter .email-input {
+        width: 80%;
+    }
+
+    .footer-content .newsletter .email-input input {
+        width: 80%;
+    } 
+
+    .footer-content .newsletter .email-input button {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-header {
+        font-size: 2.4rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-content .logo {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar .menu {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .navbar > a, .navbar button {
+        width: 100%;
+    }
+
+    .banner .banner-text {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .banner .banner-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .banner > div button:first-of-type {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .products .product-card {
+        height: 450px;
+    }
+
+    .products .product-field h3 {
+        font-size: 2rem;
+        transform: translateY(0);
+        top: 20px;
+    }
+
+    .product-card::before {
+        transform: translateY(0);
+    }
+
+    .product-details {
+        transform: translateY(0);
+        top: 50%;
+    }
+
+    .partners .partner-field {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px 30px;
+    }
+
+    .partners .company-logo {
+        width: 100%;
+    }
+
+    .testimony .testimony-text i:first-child {
+        font-size: 2rem;
+        top: -15px;
+        left: -40px;
+    }
+
+    .testimony .testimony-text i:last-child {
+        font-size: 2rem;
+        bottom: -5px;
+        right: -30px;
+    }
+
+    .contact .cta-text {
+        text-align: center;
+    }
+
+    .contact .cta-text p:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .contact .section-content div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .footer-content .social-links {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-content .social-links h1 br {
+        display: none;
+    }
+
+    .footer-content .footer-links {
+        grid-row: 2;
+        grid-column: 1;
+        width: 100%;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content .newsletter {
+        grid-row: 3;
+    } 
+
+    
+    .footer-content .newsletter .email-input {
+        width: 100%;
+    }
+
+    .footer-content .newsletter p {
+        text-align: center;
+    }
 }
