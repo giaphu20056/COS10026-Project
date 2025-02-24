@@ -835,6 +835,14 @@ label {
     text-align: center;
 }
 
+/* FIX SIZING OF CHECKBOX BUTTONS TO AVOID DISSAPEARING */
+.skill-table input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    min-width: 16px; /* Standard checkbox size */
+    min-height: 16px;
+}
+
 
 /* INTERVIEW TIME SELECTION */
 .time-slots {
