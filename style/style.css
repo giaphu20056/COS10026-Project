@@ -97,6 +97,7 @@ a {
     align-items: center;
     gap: 30px;
     margin-right: 50px;
+    list-style: none;
 }
 
 .navbar .menu a::after {
@@ -1203,4 +1204,9 @@ summary:hover {
     0% { color: rgb(12, 161, 32); }  /* When background is dark */
     50% { color: black; }  /* When background is medium gray */
     100% { color: #333; }  /* When background is light */
+}
+
+/* Handling responsiveness */
+@media screen and (max-width: 768px) {
+
 }
