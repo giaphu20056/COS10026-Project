@@ -238,7 +238,6 @@ ul, ol {
 .intro-card-field {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .intro-card {
@@ -611,7 +610,6 @@ footer {
     padding: 60px 0;
     display: flex;
     align-items: flex-start;
-    /* justify-content: space-between; */
 }
 
 .footer-content img {
@@ -1377,6 +1375,29 @@ summary:hover {
     .footer-content .newsletter .email-input button {
         flex-grow: 1;
     }
+}
+
+.enhancements table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.enhancements th, .enhancements td {
+    padding: 15px;
+    border: 1px solid black;
+
+}
+
+.enhancements tbody td {
+    vertical-align: top;
+}
+
+.enhancements img {
+    max-width: 1200px;
+}
+
+.enhancements p {
+    margin-bottom: 15px;
 }
 
 /* Responsive styling for small screen size */
