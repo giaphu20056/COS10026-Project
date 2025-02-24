@@ -1444,12 +1444,13 @@ summary:hover {
 
     .partners .partner-field {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 60px 30px;
+        grid-template-columns: 1fr;
+        gap: 60px;
+        justify-items: center;
     }
 
     .partners .company-logo {
-        width: 100%;
+        width: 60%;
     }
 
     .testimony .testimony-text div p:nth-of-type(1) {
