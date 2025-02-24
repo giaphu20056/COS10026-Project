@@ -499,6 +499,10 @@ ul, ol {
     line-height: 2rem;
 }
 
+.testimony .testimony-text div .alt-testimony {
+    display: none;
+}
+
 .testimony .testimony-text i:first-child {
     position: absolute;
     top: -30px;
@@ -1424,7 +1428,7 @@ summary:hover {
     }
 
     .products .product-field h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         transform: translateY(0);
         top: 20px;
     }
@@ -1435,7 +1439,8 @@ summary:hover {
 
     .product-details {
         transform: translateY(0);
-        top: 50%;
+        top: 30%;
+        font-size: 1.2rem;
     }
 
     .partners .partner-field {
@@ -1446,6 +1451,14 @@ summary:hover {
 
     .partners .company-logo {
         width: 100%;
+    }
+
+    .testimony .testimony-text div p:nth-of-type(1) {
+        display: none;
+    }
+
+    .testimony .testimony-text div .alt-testimony {
+        display: inline-block;
     }
 
     .testimony .testimony-text i:first-child {
