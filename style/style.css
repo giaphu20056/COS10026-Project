@@ -1,10 +1,10 @@
 /* filename: style.css
 authors: 
     1. Duc Trung Nguyen
-    2. 
-    3. 
+    2. Truong Gia Phu
+    3. Nguyen Xuan Duy Thai
 created: 17 Feb 2025
-last modified: Feb 2025
+last modified: 23 Feb 2025
 description: styling for index.html, jobs.html, apply.html, about.html, enhancements.html */
 
 html {
@@ -73,6 +73,7 @@ a {
 
 .header-content .logo h1 {
     font-weight: 500;
+    margin-top: 0;
 }
 
 .header-content .logo h1 span {
@@ -734,23 +735,15 @@ footer .footer-links a:hover::after {
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-/* filename: style.css
-authors: 
-    1. Duc Trung Nguyen
-    2. Truong Gia Phu
-    3. 
-created: 17 Feb 2025
-last modified: Feb 2025
-description: styling for apply.html */
-
-
 /* FORM CONTAINER */
-body {
+/* body {
     font-family: "Montserrat", serif;
     background-color: #f8f9fa;
     color: #333;
+    text-align: center;
+} */
+
+.sub-header {
     text-align: center;
 }
 
@@ -781,7 +774,7 @@ label {
 }
 
 /* Inputs, Select, Textarea */
-input, select, textarea {
+.form-container input, .form-container select, .form-container textarea {
     width: calc(100% - 20px);
     padding: 12px;
     margin-top: 5px;
@@ -900,16 +893,6 @@ input, select, textarea {
 }
 
 
-
-/* filename: style.css
-authors: 
-    1. Duc Trung Nguyen
-    2. Truong Gia Phu
-    3. 
-created: 17 Feb 2025
-last modified: Feb 2025
-description: styling for about.html */
-
 /* About Section */
 .about-section {
   padding: 60px 20px;
@@ -984,9 +967,6 @@ description: styling for about.html */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
-
-
 
 
 /* Team Section */
@@ -1115,14 +1095,7 @@ description: styling for about.html */
     color: white;
 }
 
-/* filename: style.css
-authors: 
-    1. Duc Trung Nguyen
-    2. Truong Gia Phu
-    3. Nguyen Xuan Duy Thai
-created: 22 Feb 2025
-last modified: 23 Feb 2025
-description: styling for jobs.html */
+/* description: styling for jobs.html */
 .job-description main {
     display: flex;
     justify-content: space-between;
@@ -1135,7 +1108,7 @@ description: styling for jobs.html */
     float: left;
     width: 75%;
 }
-button {
+.job-description button {
     background: #f39c12;
     color: white;
     padding: 10px 20px;
@@ -1204,15 +1177,15 @@ summary:hover {
 }
 
 /* Footer */
-footer {
+/* footer {
     width: 100%;
-    clear: both; /* Ensures it stays below floated elements */
+    clear: both;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
-    font-size: 1rem; /* Small font */
-}
+    font-size: 1rem;
+} */
 
 /* Keyframes for smooth background transition */
 @keyframes gradientAnimation {
