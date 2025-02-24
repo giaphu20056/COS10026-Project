@@ -1182,6 +1182,8 @@ summary:hover {
     font-size: 19px;
     padding: 15px;
     padding-bottom: 2px;
+    margin: 0;
+    border: 2px solid rgb(71, 51, 202); /* Adds a visible border */
 }
 
 /* Footer */
